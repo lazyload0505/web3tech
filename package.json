@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "start": "nx serve --port 3456",
     "server": "nx serve main-server",
     "client": "nx serve main-site",
     "build": "nx build",
+    "build-client": "nx run main-site:build",
+    "build-server": "nx run main-server:build",
+    "build-all": "nx run main-server:build && nx run main-site:build",
     "test": "nx test",
     "storybook": "nx storybook main-site"
   },
@@ -17,6 +20,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/serve-static": "^3.0.0",
     "core-js": "^3.6.5",
+    "nest": "^0.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "reflect-metadata": "^0.1.13",
