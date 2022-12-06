@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve --port 3456",
+    "start": "nx serve",
     "server": "nx serve main-server",
     "client": "nx serve main-site",
     "build-client": "nx run main-site:build",
@@ -14,7 +14,8 @@
   },
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "8.x"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
