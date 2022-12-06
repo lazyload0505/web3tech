@@ -6,14 +6,16 @@
     "start": "nx serve --port 3456",
     "server": "nx serve main-server",
     "client": "nx serve main-site",
-    "build": "nx build",
     "build-client": "nx run main-site:build",
     "build-server": "nx run main-server:build",
-    "build-all": "nx run main-server:build && nx run main-site:build",
+    "build": "nx run main-server:build && nx run main-site:build",
     "test": "nx test",
     "storybook": "nx storybook main-site"
   },
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",

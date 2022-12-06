@@ -1,0 +1,5 @@
+{
+    "version": 2,
+    "buildCommand": "npm run build-all",
+    "devCommand": "node dist/apps/main-server/main.js"
+}

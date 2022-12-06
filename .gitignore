@@ -40,3 +40,5 @@ Thumbs.db
 
 $ Project Specfic
 package-lock.json
+
+.vercel
