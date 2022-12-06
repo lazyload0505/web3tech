@@ -6,11 +6,12 @@
     "start": "nx serve",
     "server": "nx serve main-server",
     "client": "nx serve main-site",
+    "storybook": "nx storybook main-site",
+    "build": "nx run main-server:build && nx run main-site:build",
     "build-client": "nx run main-site:build",
     "build-server": "nx run main-server:build",
-    "build": "nx run main-server:build && nx run main-site:build",
-    "test": "nx test",
-    "storybook": "nx storybook main-site"
+    "build-storybook": "nx run main-site:build-storybook",
+    "test": "nx test"
   },
   "private": true,
   "engines": {

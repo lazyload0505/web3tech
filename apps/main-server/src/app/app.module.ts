@@ -9,8 +9,14 @@ import { AppService } from './app.service';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'main-site')
-    })
+      rootPath: join(__dirname, '..', 'main-site'),
+      serveRoot: '/',
+    }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', '..', 'storybook', 'main-site'),
+      serveRoot: '/storybook',
+      renderPath: '/storybook'
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
