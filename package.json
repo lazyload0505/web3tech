@@ -47,7 +47,7 @@
     "@nrwl/react": "15.2.4",
     "@nrwl/storybook": "^15.2.4",
     "@nrwl/web": "15.2.4",
-    "@nrwl/workspace": "15.2.4",engines
+    "@nrwl/workspace": "15.2.4",
     "@storybook/addon-essentials": "~6.5.9",
     "@storybook/builder-vite": "^0.2.5",
     "@storybook/builder-webpack5": "~6.5.9",
